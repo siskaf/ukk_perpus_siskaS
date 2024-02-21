@@ -1,5 +1,6 @@
 
 <?php 
+
 use Dompdf\Dompdf;
 class BukuController extends Controller
 
@@ -69,6 +70,7 @@ public function __construct()
 			redirectTo('success', 'Selamat, Data Buku berhasil di hapus!', '/buku');
 		}
 	}
+
 public function ulasan($id)
   {
     $this->view('buku/ulasan', [
@@ -76,7 +78,7 @@ public function ulasan($id)
       'ulasan'  => $this->model('Ulasanbuku')->getByBookId($id)
     ]);
   }
-  
+
 public function cetakbuku()
   {
     $data = $this->model('KBRelasi')->get();

@@ -21,6 +21,7 @@ class Peminjaman extends BaseModel
 		}
 
 		return $data;
+ 
   }
 public function get()
   {
@@ -38,4 +39,5 @@ public function get()
 
 		return $data;
   }
+ 
 }

@@ -29,14 +29,14 @@
                           ">
                           Detail
                         </a>
-            
+                        
 <form action="<?= urlTo('/peminjaman/store') ?>" method="post" class="d-inline">
                           <input type="hidden" name="BukuID" value="<?= $buku['BukuID']; ?>">
                           <button class="btn btn-primary">
                             Pinjam
                           </button>
                         </form>
-                        
+
 <form action="<?= urlTo('/koleksi/store') ?>" method="post" class="d-inline">
                           <input type="hidden" name="BukuID" value="<?= $buku['BukuID']; ?>">
                           <input type="hidden" name="UserID" value="<?= $_SESSION['UserID']; ?>">

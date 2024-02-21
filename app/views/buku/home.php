@@ -4,6 +4,7 @@
         <div class="row">
           <div class="col-12">
             <div class="card">
+          
 <div class="card-header">
               <a href="<?= urlTo('/buku/cetakbuku'); ?>" class="btn btn-success float-left">Cetak Laporan</a>
                 <a href="<?= urlTo('/buku/create'); ?>" class="btn btn-primary float-right">Tambah Data</a>
@@ -45,6 +46,7 @@
                           ">
                           Delete
                         </a>
+                        
 <a 
                           href="<?= urlTo('/buku/'.$buku['BukuID'].'/ulasan') ?>"
                           class="btn btn-info

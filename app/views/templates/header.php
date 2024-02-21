@@ -54,9 +54,10 @@
             </a>
           </li>
           
-
           
+
 <?php if ($_SESSION['role'] === 'Administrator' || $_SESSION['role'] === 'Petugas'): ?>
+
 <li class="nav-item <?= menuOpen(['user', 'kategoribuku', 'buku', 'peminjam']); ?>">
             <a href="#" class="nav-link <?= menuActive(['user', 'kategoribuku', 'buku', 'peminjam']); ?>">
               <i class="nav-icon fas fa-save"></i>
@@ -88,6 +89,7 @@
                   <p>Buku</p>
                 </a>
               </li>
+          
 <li class="nav-item">
                 <a href="<?= urlTo('/peminjam'); ?>" class="nav-link <?= menuActive(['peminjam']); ?>">
                   <i class="far fa-circle nav-icon"></i>
@@ -97,9 +99,9 @@
             </ul>
           </li>
           <?php endif ?>
-
 <?php if ($_SESSION['role'] === 'Peminjam'): ?>
 
+  
 <li class="nav-item <?= menuOpen(['perpustakaan', 'peminjaman', 'koleksi']); ?>">
             <a href="#" class="nav-link <?= menuActive(['perpustakaan', 'peminjaman', 'koleksi']); ?>">
               <i class="nav-icon fas fa-save"></i>
@@ -114,35 +116,30 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>Daftar Buku</p>
                 </a>
-              </li>
               
 <li class="nav-item">
                 <a href="<?= urlTo('/peminjaman'); ?>" class="nav-link <?= menuActive(['peminjaman']); ?>">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Buku Pinjaman</p>
                 </a>
-              </li>
-              
+                
 <li class="nav-item">
                 <a href="<?= urlTo('/koleksi'); ?>" class="nav-link <?= menuActive(['koleksi']); ?>">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Koleksi Pribadi</p>
                 </a>
               </li>
+              </li>
+              </li>
             </ul>
           </li>
           <?php endif ?>
-
           <li class="nav-item">
             <a href="<?= urlTo('/login/logout') ?>" class="nav-link">
               <i class="nav-icon fas fa-sign-out-alt"></i>
               <p>Logout</p>
-            
             </a>
-            
           </li>
-          
-
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

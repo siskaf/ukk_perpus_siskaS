@@ -35,7 +35,7 @@ class BaseModel
 
 		return $this->mysqli->insert_id;
 	}
-    
+
 public function getAll()
 	{
 		$result = $this->mysqli->query("SELECT * FROM $this->table_name ORDER BY $this->table_id DESC");

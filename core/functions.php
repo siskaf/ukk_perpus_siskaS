@@ -1,4 +1,3 @@
-
 <?php 
 include '../core/Url.php';
 include '../core/Controller.php';
@@ -58,7 +57,6 @@ function menuOpen($menu)
 			return 'menu-open';
 		}
 	}
-}
 function hitung($table)
 {
 	global $db;
@@ -66,4 +64,6 @@ function hitung($table)
 
 	return $result->num_rows;
 }
+}
+
 include '../dompdf/autoload.inc.php';
